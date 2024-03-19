@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BATA CLONE</title>
+	<style>
+
+		* {
+  			box-sizing: border-box;
+  			margin: 0;
+  			padding: 0;
+		  }
+		html, body {
+  			height: 100%; /*Explicitly Sets the height of the html and body elements to 100% */
+		  }
+
+		body {
+  		   background-image: url("Bata.jpg");
+  	       background-size: cover;
+           background-repeat: no-repeat;
+           text-align: center;
+          }
+  	   #container{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+         }
+       
+
+		.Bata{
+			margin-top: 50px;
+			height: 3rem;
+		    transform: translateY(-100%); /* Start with translateY set to -100% */
+            animation: slideIn 1s ease-in-out forwards; /* Use forwards to keep the final state after animation */ 
+		}
+		@keyframes slideIn {
+          0% {
+           transform: translateY(-100%);
+         }
+          100% {
+           transform: translateY(0);
+         }
+        }
+
+		.heading{
+			color: #ffffff;
+		    display: block;
+    		font-size: 3.5rem;
+            font-weight: bold;
+            line-height: 3rem;
+            margin-top: 30px;
+
+     	}
+
+
+     	.P{
+     		color: #ffffff;
+     		font-size: 1.4rem;
+     		line-height: 1.4rem;
+     		margin-top: 1.5rem;
+     		font-weight: bold;
+     	}
+
+     	.Socials{
+     		display: inline-flex;
+     		margin-top: 3rem;
+     		background-color:rgba(255, 255, 255, 0.25);
+     		padding: 5px;
+     		border-radius: 10px;
+     	}
+
+     	.Socials img {
+  width: 40px; /* Set the desired width for the icons */
+  height: 40px; /* Set the desired height for the icons */
+  margin: 10px; /* Add margin for spacing between icons */
+}
+	</style>
+</head>
+<body>
+	<img src="Bata.png"  class="Bata">
+	<div id="container">
+	   <h1 class="heading">We are <br>Re-launching soon...</h1>
+	   <p class="P">Bringing back the store experience online!</p>
+	</div>
+	
+	<div class="Socials">
+		<img src="call.png" alt="Call Icon">
+		<img src="facebook.png" alt="Facebook Icon">
+		<img src="whatsapp.png" alt="Whatsapp Icon">
+		<img src="instagram.png" alt="Instagram Icon">
+		<img src="twitter.png" alt="Twitter Icon">
+		<img src="linkedin.png" alt="Linked Icon">
+		<img src="tiktok.png" alt="Tiktok Icon">		
+	</div>
+
+</body>
+</html>
